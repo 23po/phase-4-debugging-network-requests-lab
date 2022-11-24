@@ -63,11 +63,23 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    - I first try to add a toy
+    - I read the error message in console (505 internal server eror)
+    - I check server logs (Nameerror in ToysController)
+    - Solve error 
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    - I first try to add likes
+    - I read error in console (Unexpected end of JSON input)
+    - Check fetch request (expecting json)
+    - Check controller for response sent (not json)
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+    - I first try by hitting donate button
+    - I read error in console (404)
+    - I check network tab for error (Routing error)
+    - I check again server logs (routing error)
